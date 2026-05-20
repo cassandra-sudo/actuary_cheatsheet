@@ -35,7 +35,14 @@ donde $D_j \sim \text{Ber}(q_j)$, $C_j > 0$, todas independientes, $D_j \perp C_
 
 **Proposición 1.1.** Con $F_j(x) = P(D_j C_j \leq x)$ y $G_j(x) = P(C_j \leq x)$:
 
-$$\boxed{F_j(x) = \begin{cases} 1 - q_j\,(1 - G_j(x)) & \text{si } x \geq 0 \\ 0 & \text{si } x < 0 \end{cases}}$$
+$$
+\boxed{
+F_j(x)=
+\begin{cases}
+1 - q_j(1-G_j(x)) & \text{si } x \ge 0 \\
+0 & \text{si } x < 0
+\end{cases}}
+$$
 
 *La distribución de $D_j C_j$ es mixta: masa puntual $(1-q_j)$ en cero y parte continua/discreta de $C_j$ escalada por $q_j$.*
 
